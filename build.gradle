@@ -17,8 +17,8 @@ dependencies {
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.13.0'
     implementation 'io.github.bonigarcia:webdrivermanager:5.5.3'
 
-    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.14.0'
-    testImplementation group: 'io.cucumber', name: 'cucumber-junit-platform-engine', version: '7.14.0'
+//    testImplementation group: 'io.cucumber', name: 'cucumber-junit-platform-engine', version: '7.14.0'
+    testImplementation 'io.cucumber:cucumber-java:7.14.0'
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.14.0'
 
     testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '5.3.1'
@@ -26,6 +26,50 @@ dependencies {
     implementation 'org.json:json:20210307'
 }
 
-test {
-    useJUnitPlatform()
+//test {
+//    useJUnitPlatform()
+//}
+
+configurations {
+    cucumberRunTime {
+        extendsFrom testImplementation
+    }
+}
+
+def tags = (findProperty('tags') == null) ? 'not @exclude' : findProperty('tags') + ' and not @exclude'
+
+tasks.register('cucumber') {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRunTime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'html:reports/test-report.html',
+                    '--plugin', 'json:reports/test-report.json',
+                    '--plugin', 'pretty',
+                    '--glue', 'com.redsky',
+                    '--tags', "${tags}",
+                    'src/test/resources'
+            ]
+        }
+    }
+}
+
+tasks.register("api") {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRunTime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'html:reports/test-report.html',
+                    '--plugin', 'json:reports/test-report.json',
+                    '--plugin', 'pretty',
+                    '--glue', 'com.redsky.api',
+                    '--tags', "@api",
+                    'src/test/resources/api'
+            ]
+        }
+    }
 }
