@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2XPqlc2U7NFaJ6sfnDPJKFdMVvx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "GET-Features",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/test/java/com/redsky/api",
+    "onboarding.tips.debug.path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/main/java/org/rizkiamin/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\java\com\redsky" />
+      <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\resources\api\" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: GRT: get list of users with valid limit and page boundary values">
+    <configuration name="Scenario: GET: get list of Tags with path tag starting with space (&quot; &quot;)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" />
+      <option name="GLUE" value="com.redsky.api" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProject-AutomationWebAPI.test" />
+      <option name="NAME_FILTER" value="^GET\: get list of Tags with path tag starting with space \(\&quot; \&quot;\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^GET\: get list of Tags with path tag starting with space \(\&quot; \&quot;\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: GET: get list of Tags with path tag starting with space (&quot; &quot;)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: GET: get list of Users with path user starting with space (&quot; &quot;)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" />
+      <option name="GLUE" value="com.redsky.api" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProject-AutomationWebAPI.test" />
+      <option name="NAME_FILTER" value="^GET\: get list of Users with path user starting with space \(\&quot; \&quot;\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^GET\: get list of Users with path user starting with space \(\&quot; \&quot;\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: GET: get list of Users with path user starting with space (&quot; &quot;)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: GET: get list of users" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" />
+      <option name="GLUE" value="com.redsky.api" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProject-AutomationWebAPI.test" />
+      <option name="NAME_FILTER" value="^GET\: get list of users$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^GET\: get list of users$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: GET: get list of users" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: GET: get specific data user with ID containing space (&quot; &quot;)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" />
+      <option name="GLUE" value="com.redsky.api" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProject-AutomationWebAPI.test" />
+      <option name="NAME_FILTER" value="^GET\: get specific data user with ID containing space \(\&quot; \&quot;\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^GET\: get specific data user with ID containing space \(\&quot; \&quot;\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: GET: get specific data user with ID containing space (&quot; &quot;)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: GRT: get list of users with valid limit and page boundary values" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" />
+      <option name="GLUE" value="com.redsky.api" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProject-AutomationWebAPI.test" />
+      <option name="NAME_FILTER" value="^GRT\: get list of users with valid limit and page boundary values$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^GRT\: get list of users with valid limit and page boundary values$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: GRT: get list of users with valid limit and page boundary values" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: GRT: get list of users with valid limit and page boundary values" />
+        <item itemvalue="Cucumber Java.Scenario: GET: get list of users" />
+        <item itemvalue="Cucumber Java.Scenario: GET: get list of Users with path user starting with space (&quot; &quot;)" />
+        <item itemvalue="Cucumber Java.Scenario: GET: get list of Tags with path tag starting with space (&quot; &quot;)" />
+        <item itemvalue="Cucumber Java.Scenario: GET: get specific data user with ID containing space (&quot; &quot;)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="" />
+      <created>1698541214896</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698541214896</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
