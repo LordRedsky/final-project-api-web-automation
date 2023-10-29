@@ -26,9 +26,9 @@ dependencies {
     implementation 'org.json:json:20210307'
 }
 
-test {
-    useJUnitPlatform()
-}
+//test {
+//    useJUnitPlatform()
+//}
 
 configurations {
     cucumberRunTime {
