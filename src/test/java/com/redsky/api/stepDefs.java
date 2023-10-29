@@ -38,12 +38,21 @@ public class stepDefs {
         switch (method) {
             case "GET":
                 switch (endpoint_name) {
-                    case "user" -> response = request.when().get(endpoint.user_url);
-                    case " user" -> response = request.when().get(endpoint.baseURL + " user");
-                    case "tag" -> response = request.when().get(endpoint.tag_url);
-                    case " tag" -> response = request.when().get(endpoint.baseURL + " tag");
+                    case "user":
+                        response = request.when().get(endpoint.user_url);
+                        break;
+                    case " user":
+                        response = request.when().get(endpoint.baseURL + " user");
+                        break;
+                    case "tag":
+                        response = request.when().get(endpoint.tag_url);
+                        break;
+                    case " tag":
+                        response = request.when().get(endpoint.baseURL + " tag");
+                        break;
                 }
-                break;
+
+//                break;
 
             case "POST":
                 response = request.when().post(endpoint.user_create_url);
