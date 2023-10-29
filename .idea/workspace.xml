@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/test-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/test-report.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/CucumberAPITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/api/endpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/api/stepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/JSONSchemas/get_list_tag.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/JSONSchemas/get_list_user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/JSONSchemas/get_specific_user_by_id.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/test-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/test-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +64,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/test/java/com/redsky/api",
     "onboarding.tips.debug.path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/main/java/org/rizkiamin/Main.java"
