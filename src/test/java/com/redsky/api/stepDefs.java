@@ -11,7 +11,10 @@ import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.util.Map;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertEquals;
 
 public class stepDefs {
@@ -34,10 +37,11 @@ public class stepDefs {
     public void userSendARequestToTheEndpoint(String method, String endpoint_name) {
         switch (method) {
             case "GET":
-                if (endpoint_name.equals("list")) {
-                    response = request.when().get(endpoint.user_url);
-                } else if (endpoint_name.equals("tag")) {
-                    response = request.when().get(endpoint.tag_url);
+                switch (endpoint_name) {
+                    case "user" -> response = request.when().get(endpoint.user_url);
+                    case " user" -> response = request.when().get(endpoint.baseURL + " user");
+                    case "tag" -> response = request.when().get(endpoint.tag_url);
+                    case " tag" -> response = request.when().get(endpoint.baseURL + " tag");
                 }
                 break;
 
@@ -73,5 +77,27 @@ public class stepDefs {
             case "DELETE":
                 break;
         }
+    }
+
+    @And("the response should be contain:")
+    public void theResponseShouldBeContain(Map<String, String> values) {
+        for (Map.Entry<String, String> entry : values.entrySet()) {
+            System.out.println(entry.getKey());
+        }
+        for (Map.Entry<String, String> entry : values.entrySet()) {
+            String key = entry.getKey();
+            String value = entry.getValue();
+            String actual = response.path(key).toString();
+
+            assertThat(actual, equalTo(value));
+        }
+    }
+
+    @When("user set the request parameters to:")
+    public void userSetTheRequestParametersTo(Map<String, String> params) {
+        String limit = params.get("limit");
+        String page = params.get("page");
+
+        request.params("limit", limit, "page", page);
     }
 }
