@@ -37,26 +37,26 @@ public class stepDefs {
     public void userSendARequestToTheEndpoint(String method, String endpoint_name) {
         switch (method) {
             case "GET":
-                switch (endpoint_name) {
-                    case "user":
-                        response = request.when().get(endpoint.user_url);
-                        break;
-                    case " user":
-                        response = request.when().get(endpoint.baseURL + " user");
-                        break;
-                    case "tag":
-                        response = request.when().get(endpoint.tag_url);
-                        break;
-                    case " tag":
-                        response = request.when().get(endpoint.baseURL + " tag");
-                        break;
+                if (endpoint_name.equals("user")){
+                    response = request.when().get(endpoint.user_url);
                 }
-
-//                break;
+                else if (endpoint_name.equals(" user")) {
+                    response = request.when().get(endpoint.baseURL + " user");
+                }
+                else if (endpoint_name.equals("tag")) {
+                    response = request.when().get(endpoint.tag_url);
+                }
+                else if (endpoint_name.equals(" tag")) {
+                    response = request.when().get(endpoint.baseURL + " tag");
+                }
+                break;
 
             case "POST":
                 response = request.when().post(endpoint.user_create_url);
                 break;
+
+            default:
+                throw new IllegalStateException("Unexpected value: " + method);
         }
     }
 

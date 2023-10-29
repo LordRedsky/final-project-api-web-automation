@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/test-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/test-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/features/01_GET.feature" afterDir="false" />
-    </list>
+    <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
