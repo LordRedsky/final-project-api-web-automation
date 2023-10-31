@@ -11,6 +11,7 @@ Feature: DELETE
     And the response should be match with "delete_user_by_id.json"
 
     Examples:
-      | validID |
-      | ID_01   |
+      | validID     |
+      | ID_required |
+      | ID_full     |
 #        |userID|

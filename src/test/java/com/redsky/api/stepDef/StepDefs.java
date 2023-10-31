@@ -4,6 +4,7 @@ import com.redsky.api.helper.Endpoint;
 import com.redsky.api.helper.Payload;
 import com.redsky.api.utilities.ContainerReusableID;
 import com.redsky.api.utilities.GetJSONSchemaFile;
+import com.redsky.api.utilities.RequestBody;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -118,49 +119,84 @@ public class StepDefs {
         request.params("limit", limit, "page", page);
     }
 
-    @And("user prepare {string} body for {string} method")
-    public void userPrepareBodyForMethod(String fields, String method) {
-        switch (method) {
-            case "POST":
-                if (fields.equals("required fields")) {
-                    bodyReq = Payload.getRequiredFieldBody();
-//                    System.out.println(body.toString());
-//                    response = request.body(body.toString()).when().post("https://dummyapi.io/data/v1/user/create");
-                    request.body(bodyReq.toString());
-//                    System.out.println(response.getStatusCode());
-                }
-                break;
-            case "PUT":
-                break;
-        }
-    }
+//    @And("user prepare {string} body for {string} method")
+//    public void userPrepareBodyForMethod(String fields, String method) {
+//        switch (method) {
+//            case "POST":
+//                if (fields.equals("required fields")) {
+//                    bodyReq = Payload.getRequiredFieldBody();
+//                    request.body(bodyReq.toString());
+//                } else if (fields.equals("full fields")) {
+//                    bodyReq = Payload.getFullFieldBody();
+//                    request.body(bodyReq.toString());
+//                }
+//                break;
+//            case "PUT":
+//                break;
+//        }
+//    }
 
     @And("the response body {string} will be named as {string} and will be used for next test")
     public void theResponseBodyWillBeNamedAsAndWillBeUsedForNextTest(String id, String categoryID) throws BackingStoreException {
-//        Preferences prefs = Preferences.systemRoot().node("com.redsky.api");
         if (categoryID.equals("reusableID_01")) {
             String id_user = response.jsonPath().getString(id);
-
             System.out.println(id_user);
-            prefs.put("ID_01", id_user);
-//            System.out.println(prefs.get("ID_01", null));
+            prefs.put("ID_required", id_user);
+        } else if (categoryID.equals("reusableID_02")) {
+            String id_user = response.jsonPath().getString(id);
+            prefs.put("ID_full", id_user);
         }
     }
 
 
     @When("user send a {string} request with id {string}")
     public void userSendARequestWithId(String method, String deletedID) throws BackingStoreException {
-        String ID_01 = prefs.get("ID_01", null);
+        String ID_01 = prefs.get("ID_required", null);
+        String ID_02 = prefs.get("ID_full", null);
 
         switch (method) {
             case "PUT":
                 break;
 
             case "DELETE":
-                if (deletedID.equals("ID_01")) {
+                if (deletedID.equals("ID_required")) {
                     response = request.when().delete(Endpoint.user_specific_url + ID_01);
+                    prefs.remove(deletedID);
+                } else if (deletedID.equals("ID_full")) {
+                    response = request.when().delete(Endpoint.user_specific_url + ID_02);
+                    prefs.remove(deletedID);
                 }
                 break;
+        }
+    }
+
+    @And("user prepare {string} body for {string} method to:")
+    public void userPrepareBodyForMethodTo(String fields, String method, Map<String, String> body) {
+
+        switch (method) {
+            case "POST":
+                if (fields.equals("required fields")) {
+                    bodyReq = Payload.getRequiredFieldBody(body);
+                    request.body(bodyReq.toString());
+                } else if (fields.equals("full fields")) {
+                    bodyReq = Payload.getFullFieldBody(body);
+                    request.body(bodyReq.toString());
+                }
+                break;
+            case "PUT":
+                break;
+        }
+
+    }
+
+    @And("the response body should contain:")
+    public void theResponseBodyShouldContain(Map<String, String> expectedValues) {
+        for (Map.Entry<String, String> entry : expectedValues.entrySet()) {
+            String key = entry.getKey();
+            String value = entry.getValue();
+
+            String actual = response.path(key).toString();
+            assertThat(actual, equalTo(value));
         }
     }
 
