@@ -1,6 +1,6 @@
-package com.redsky.api;
+package com.redsky.api.helper;
 
-public class endpoint {
+public class Endpoint {
     public static final String baseURL = "https://dummyapi.io/data/v1/";
 
     // List User Endpoints
