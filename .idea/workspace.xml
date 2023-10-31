@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/api/helper/Payload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/api/helper/Payload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/api/stepDef/StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/api/stepDef/StepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/api/features/02_POST.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/features/02_POST.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/features/04_DELETE.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/features/04_DELETE.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\resources\api\" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: POST: create new user with invalid value of title (title: prof)">
+  <component name="RunManager" selected="Cucumber Java.Scenario: POST: create new user with email is empty on required fields body (not contain '@')">
     <configuration name="Feature: 02_POST" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/02_POST.feature" />
@@ -115,15 +112,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: DELETE: delete data with valid ID user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: POST: create new user with email is empty on required fields body (not contain '@')" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/04_DELETE.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/02_POST.feature" />
       <option name="GLUE" value="com.redsky.api.stepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^DELETE\: delete data with valid ID user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^DELETE\: delete data with valid ID user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: DELETE: delete data with valid ID user" />
+      <option name="NAME_FILTER" value="^POST\: create new user with email is empty on required fields body \(not contain \'\@\'\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^POST\: create new user with email is empty on required fields body \(not contain \'\@\'\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: POST: create new user with email is empty on required fields body (not contain '@')" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -177,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: POST: create new user with email is empty on required fields body (not contain '@')" />
+        <item itemvalue="Cucumber Java.Feature: 04_DELETE" />
         <item itemvalue="Cucumber Java.Scenario: POST: create new user with invalid value of title (title: prof)" />
         <item itemvalue="Cucumber Java.Scenario: POST: create new user with email is empty on required fields body" />
         <item itemvalue="Cucumber Java.Feature: 02_POST" />
-        <item itemvalue="Cucumber Java.Feature: 04_DELETE" />
-        <item itemvalue="Cucumber Java.Scenario: DELETE: delete data with valid ID user" />
       </list>
     </recent_temporary>
   </component>

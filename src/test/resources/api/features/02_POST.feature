@@ -53,13 +53,25 @@ Feature: POST
   @post-negative
   Scenario: POST: create new user with email is empty on required fields body
     And user prepare "required fields" body for "POST" method to:
-      | firstName | redsky |
-      | lastName  | raven  |
+      | firstName | redsky           |
+      | lastName  | raven            |
     When user send a "POST" request to the "create" endpoint
     Then status code should be 400
     And the response body should contain:
       | error      | BODY_NOT_VALID            |
       | data.email | Path `email` is required. |
+
+  @post-negative
+  Scenario: POST: create new user with invalid email format (not contain '@')
+    And user prepare "required fields" body for "POST" method to:
+      | firstName | redsky          |
+      | lastName  | raven           |
+      | email     | raven24mail.com |
+    When user send a "POST" request to the "create" endpoint
+    Then status code should be 400
+    And the response body should contain:
+      | error      | BODY_NOT_VALID                             |
+      | data.email | Path `email` is invalid (raven24mail.com). |
 
   @post-negative
    #TITLE VALUE MUST BE 'mr', 'ms', 'mrs', 'miss', 'dr', or empty.

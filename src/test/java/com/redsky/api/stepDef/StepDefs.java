@@ -161,8 +161,10 @@ public class StepDefs {
             case "DELETE":
                 if (deletedID.equals("ID_required")) {
                     response = request.when().delete(Endpoint.user_specific_url + ID_01);
+                    System.out.println(ID_01);
                     prefs.remove(deletedID);
                 } else if (deletedID.equals("ID_full")) {
+                    System.out.println(ID_02);
                     response = request.when().delete(Endpoint.user_specific_url + ID_02);
                     prefs.remove(deletedID);
                 }
