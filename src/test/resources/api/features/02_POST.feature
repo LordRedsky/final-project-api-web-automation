@@ -108,6 +108,6 @@ Feature: POST
     And the response body should contain "<error>", with message "<data.firstName>" and "<data.lastName>"
 
     Examples:
-      | name                                 | error          | data.firstName                                                                                            | data.lastName                                                                                           |
+      | name                                 | error          | data.firstName                                                                                            | data.lastName                                                                                            |
       | averylongusernameintheearthandgalaxy | BODY_NOT_VALID | Path `firstName` (`averylongusernameintheearthandgalaxy`) is longer than the maximum allowed length (30). | Path `lastName` (`averylongusernameintheearthandgalaxy`) is longer than the maximum allowed length (30). |
       | a                                    | BODY_NOT_VALID | Path `firstName` (`a`) is shorter than the minimum allowed length (2).                                    | Path `lastName` (`a`) is shorter than the minimum allowed length (2).                                    |

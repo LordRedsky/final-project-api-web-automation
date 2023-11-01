@@ -3,6 +3,7 @@ package com.redsky.api.helper;
 import com.redsky.api.utilities.RequestBody;
 import org.json.JSONObject;
 
+import java.sql.SQLOutput;
 import java.util.Map;
 
 public class Payload {
@@ -10,6 +11,11 @@ public class Payload {
         String firstName = body.get("firstName");
         String lastName = body.get("lastName");
         String email = body.get("email");
+
+        if (firstName == null || lastName == null) {
+            firstName = "";
+            lastName = "";
+        }
 
         return RequestBody.setupRequiredBody(
                 firstName,
@@ -32,6 +38,10 @@ public class Payload {
         String street = body.get("street");
         String timezone = body.get("timezone");
         String state = body.get("state");
+
+        System.out.println(firstName);
+        System.out.println(email);
+        System.out.println("masuk disini full");
 
         return RequestBody.setupFullBody(
                 title,

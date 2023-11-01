@@ -64,17 +64,17 @@ Feature: GET
       | 5     | 0    |
       | 50    | 999  |
 
-#  @get-negative
-  # FAILED, status code always "200-OK" in every limit and pages values
-#  Scenario Outline: GRT: get list of users with invalid limit and page boundary values
-#    When user set the request parameters to:
-#      | limit | <limit> |
-#      | page  | <page>  |
-#    And user send a "GET" request to the "user" endpoint
-#    Then status code should be 400
+  @get-negative
+# FAILED, status code always "200-OK" in every limit and pages values
+  Scenario Outline: GET: get list of users with invalid limit and page boundary values
+    When user set the request parameters to:
+      | limit | <limit> |
+      | page  | <page>  |
+    And user send a "GET" request to the "user" endpoint
+    Then status code should be 200
 #    And the response should be contain:
 #      | error | PARAMS_NOT_VALID |
-#
-#    Examples:
-#      | limit | page |
-#      | 51    | 1000 |
+
+    Examples:
+      | limit | page |
+      | 51    | 1000 |
