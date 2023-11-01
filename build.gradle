@@ -73,3 +73,21 @@ tasks.register("api") {
         }
     }
 }
+
+tasks.register("web") {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRunTime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'html:reports/test-report.html',
+                    '--plugin', 'json:reports/test-report.json',
+                    '--plugin', 'pretty',
+                    '--glue', 'com.redsky.web',
+                    '--tags', "@web",
+                    'src/test/resources/web'
+            ]
+        }
+    }
+}
