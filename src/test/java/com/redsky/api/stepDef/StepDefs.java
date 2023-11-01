@@ -152,17 +152,14 @@ public class StepDefs {
     @And("user prepare {string} body for {string} method with:")
     public void userPrepareBodyForMethodWith(String fields, String method, Map<String, String> body) {
 
-        switch (method) {
-            case "POST", "PUT":
-                if (fields.equals("required fields")) {
-                    bodyReq = Payload.getRequiredFieldBody(body);
-                    request.body(bodyReq.toString());
-                } else if (fields.equals("full fields")) {
-                    bodyReq = Payload.getFullFieldBody(body);
-                    request.body(bodyReq.toString());
-                }
-                break;
-        }
+        if (method.equals("POST") || method.equals("PUT"))
+            if (fields.equals("required fields")) {
+                bodyReq = Payload.getRequiredFieldBody(body);
+                request.body(bodyReq.toString());
+            } else if (fields.equals("full fields")) {
+                bodyReq = Payload.getFullFieldBody(body);
+                request.body(bodyReq.toString());
+            }
     }
 
     @And("the response body should contain:")
@@ -178,9 +175,9 @@ public class StepDefs {
 
     @And("the response body should contain {string}, with message {string} and {string}")
     public void theResponseBodyShouldContainWithMessageAnd(String error, String errorMessage_1, String errorMessage_2) {
-    response.then().assertThat()
-            .body("error", Matchers.equalTo(error))
-            .body("data.firstName", Matchers.equalTo(errorMessage_1))
-            .body("data.lastName", Matchers.equalTo(errorMessage_2));
+        response.then().assertThat()
+                .body("error", Matchers.equalTo(error))
+                .body("data.firstName", Matchers.equalTo(errorMessage_1))
+                .body("data.lastName", Matchers.equalTo(errorMessage_2));
     }
 }
