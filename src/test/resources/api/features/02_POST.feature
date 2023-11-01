@@ -4,9 +4,8 @@ Feature: POST
   Background:
     Given all request header is properly setup
 
-      # NOTES
-      # requred fields is only first name, last name and email
   @post-positive
+  # requred fields is only first name, last name and email
   Scenario: POST: create new user with required body fields only
     And user prepare "required fields" body for "POST" method to:
       | firstName | redsky           |
@@ -53,8 +52,8 @@ Feature: POST
   @post-negative
   Scenario: POST: create new user with email is empty on required fields body
     And user prepare "required fields" body for "POST" method to:
-      | firstName | redsky           |
-      | lastName  | raven            |
+      | firstName | redsky |
+      | lastName  | raven  |
     When user send a "POST" request to the "create" endpoint
     Then status code should be 400
     And the response body should contain:
@@ -95,3 +94,20 @@ Feature: POST
     And the response body should contain:
       | error      | BODY_NOT_VALID                                     |
       | data.title | `prof` is not a valid enum value for path `title`. |
+
+  @post-negative
+    # maximum value allowed length is 30
+    # minimum value allowed length is 2
+  Scenario Outline: POST: create new user with firstName and lastName value length boundaries
+    And user prepare "required fields" body for "POST" method to:
+      | firstName | <name>          |
+      | lastName  | <name>          |
+      | email     | raven24mail.com |
+    When user send a "POST" request to the "create" endpoint
+    Then status code should be 400
+    And the response body should contain "<error>", with message "<data.firstName>" and "<data.lastName>"
+
+    Examples:
+      | name                                 | error          | data.firstName                                                                                            | data.lastName                                                                                           |
+      | averylongusernameintheearthandgalaxy | BODY_NOT_VALID | Path `firstName` (`averylongusernameintheearthandgalaxy`) is longer than the maximum allowed length (30). | Path `lastName` (`averylongusernameintheearthandgalaxy`) is longer than the maximum allowed length (30). |
+      | a                                    | BODY_NOT_VALID | Path `firstName` (`a`) is shorter than the minimum allowed length (2).                                    | Path `lastName` (`a`) is shorter than the minimum allowed length (2).                                    |

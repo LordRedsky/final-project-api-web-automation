@@ -13,6 +13,7 @@ import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.hamcrest.Matchers;
 import org.json.JSONObject;
 
 import java.io.File;
@@ -119,23 +120,6 @@ public class StepDefs {
         request.params("limit", limit, "page", page);
     }
 
-//    @And("user prepare {string} body for {string} method")
-//    public void userPrepareBodyForMethod(String fields, String method) {
-//        switch (method) {
-//            case "POST":
-//                if (fields.equals("required fields")) {
-//                    bodyReq = Payload.getRequiredFieldBody();
-//                    request.body(bodyReq.toString());
-//                } else if (fields.equals("full fields")) {
-//                    bodyReq = Payload.getFullFieldBody();
-//                    request.body(bodyReq.toString());
-//                }
-//                break;
-//            case "PUT":
-//                break;
-//        }
-//    }
-
     @And("the response body {string} will be named as {string} and will be used for next test")
     public void theResponseBodyWillBeNamedAsAndWillBeUsedForNextTest(String id, String categoryID) throws BackingStoreException {
         if (categoryID.equals("reusableID_01")) {
@@ -188,7 +172,6 @@ public class StepDefs {
             case "PUT":
                 break;
         }
-
     }
 
     @And("the response body should contain:")
@@ -202,8 +185,11 @@ public class StepDefs {
         }
     }
 
-
-//    @When("user send a {string} request with id should be contain:")
-//    public void userSendARequestWithIdShouldBeContain(String method) {
-//    }
+    @And("the response body should contain {string}, with message {string} and {string}")
+    public void theResponseBodyShouldContainWithMessageAnd(String error, String errorMessage_1, String errorMessage_2) {
+    response.then().assertThat()
+            .body("error", Matchers.equalTo(error))
+            .body("data.firstName", Matchers.equalTo(errorMessage_1))
+            .body("data.lastName", Matchers.equalTo(errorMessage_2));
+    }
 }

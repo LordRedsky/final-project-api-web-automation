@@ -14,4 +14,4 @@ Feature: DELETE
       | validID     |
       | ID_required |
       | ID_full     |
-#        |userID|
+
