@@ -40,7 +40,7 @@ Feature: GET
 
   @get-negative
   Scenario: GET: get specific data user with an ID starting with space (" ")
-    When user send a "GET" request with specific id " 60d0fe4f5311236168a109cc"
+    When user send a "GET" request witith specific id " 60d0fe4f5311236168a109cc"
     Then status code should be 400
     And the response should be contain:
       | error | PARAMS_NOT_VALID |
