@@ -7,7 +7,7 @@ Feature: POST
   @post-positive
   # requred fields is only first name, last name and email
   Scenario: POST: create new user with required body fields only
-    And user prepare "required fields" body for "POST" method to:
+    And user prepare "required fields" body for "POST" method with:
       | firstName | redsky           |
       | lastName  | raven            |
       | email     | raven24@mail.com |
@@ -18,7 +18,7 @@ Feature: POST
 
   @post-positive
   Scenario: POST: create new user with full body fields
-    And user prepare "full fields" body for "POST" method to:
+    And user prepare "full fields" body for "POST" method with:
       | title       | mr                                                |
       | firstName   | lord                                              |
       | lastName    | yondaime                                          |
@@ -39,7 +39,7 @@ Feature: POST
 
   @post-negative
   Scenario: POST: create new user with registered email
-    And user prepare "required fields" body for "POST" method to:
+    And user prepare "required fields" body for "POST" method with:
       | firstName | redsky           |
       | lastName  | raven            |
       | email     | raven24@mail.com |
@@ -51,7 +51,7 @@ Feature: POST
 
   @post-negative
   Scenario: POST: create new user with email is empty on required fields body
-    And user prepare "required fields" body for "POST" method to:
+    And user prepare "required fields" body for "POST" method with:
       | firstName | redsky |
       | lastName  | raven  |
     When user send a "POST" request to the "create" endpoint
@@ -62,7 +62,7 @@ Feature: POST
 
   @post-negative
   Scenario: POST: create new user with invalid email format (not contain '@')
-    And user prepare "required fields" body for "POST" method to:
+    And user prepare "required fields" body for "POST" method with:
       | firstName | redsky          |
       | lastName  | raven           |
       | email     | raven24mail.com |
@@ -75,7 +75,7 @@ Feature: POST
   @post-negative
    #TITLE VALUE MUST BE 'mr', 'ms', 'mrs', 'miss', 'dr', or empty.
   Scenario: POST: create new user with invalid value of title (title: prof)
-    And user prepare "full fields" body for "POST" method to:
+    And user prepare "full fields" body for "POST" method with:
       | title       | prof                                              |
       | firstName   | Uzumaki                                           |
       | lastName    | Naruto                                            |
@@ -99,7 +99,7 @@ Feature: POST
     # maximum value allowed length is 30
     # minimum value allowed length is 2
   Scenario Outline: POST: create new user with firstName and lastName value length boundaries
-    And user prepare "required fields" body for "POST" method to:
+    And user prepare "required fields" body for "POST" method with:
       | firstName | <name>          |
       | lastName  | <name>          |
       | email     | raven24mail.com |

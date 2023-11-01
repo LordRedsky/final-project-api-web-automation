@@ -19,7 +19,6 @@ public class Payload {
     }
 
     public static JSONObject getFullFieldBody(Map<String, String> body) {
-//        System.out.println(body.toString());
         String title = body.get("title");
         String firstName = body.get("firstName");
         String lastName = body.get("lastName");

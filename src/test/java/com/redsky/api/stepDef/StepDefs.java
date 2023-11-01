@@ -2,9 +2,7 @@ package com.redsky.api.stepDef;
 
 import com.redsky.api.helper.Endpoint;
 import com.redsky.api.helper.Payload;
-import com.redsky.api.utilities.ContainerReusableID;
 import com.redsky.api.utilities.GetJSONSchemaFile;
-import com.redsky.api.utilities.RequestBody;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -32,10 +30,6 @@ public class StepDefs {
     JSONObject bodyReq;
     Preferences prefs = Preferences.userNodeForPackage(StepDefs.class);
 
-    // REUSABLE ID
-//    private String ID_01;
-
-
     @Given("all request header is properly setup")
     public void allRequestHeaderIsProperlySetup() {
         String access_token = "653d0b19a38ceded3354529f";
@@ -47,9 +41,6 @@ public class StepDefs {
 
     @When("user send a {string} request to the {string} endpoint")
     public void userSendARequestToTheEndpoint(String method, String endpoint_name) {
-//        Preferences prefs = Preferences.userRoot().node("com.redsky.api");
-//        ID_01 = prefs.get("ID_01", null);
-
         switch (method) {
             case "GET":
                 if (endpoint_name.equals("user")) {
@@ -95,6 +86,8 @@ public class StepDefs {
                 response = request.when().get(Endpoint.user_specific_url + specific_id);
                 break;
             case "PUT":
+                String updatedID = prefs.get(specific_id, null);
+                response = request.when().put(Endpoint.user_specific_url + updatedID);
                 break;
             case "DELETE":
                 break;
@@ -156,11 +149,11 @@ public class StepDefs {
         }
     }
 
-    @And("user prepare {string} body for {string} method to:")
-    public void userPrepareBodyForMethodTo(String fields, String method, Map<String, String> body) {
+    @And("user prepare {string} body for {string} method with:")
+    public void userPrepareBodyForMethodWith(String fields, String method, Map<String, String> body) {
 
         switch (method) {
-            case "POST":
+            case "POST", "PUT":
                 if (fields.equals("required fields")) {
                     bodyReq = Payload.getRequiredFieldBody(body);
                     request.body(bodyReq.toString());
@@ -168,8 +161,6 @@ public class StepDefs {
                     bodyReq = Payload.getFullFieldBody(body);
                     request.body(bodyReq.toString());
                 }
-                break;
-            case "PUT":
                 break;
         }
     }
