@@ -10,6 +10,13 @@ public class HomeStepDefs extends BaseTest {
 
     Homepage homepage;
 
+    @Then("all menu and button displayed properly")
+    public void allMenuAndButtonDisplayedProperly() throws InterruptedException {
+        Thread.sleep(1000);
+        homepage = new Homepage(driver);
+        homepage.validateHomepage();
+    }
+
     @When("user click {string} button")
     public void userClickButton(String category) throws InterruptedException {
         Thread.sleep(1000);
@@ -18,10 +25,8 @@ public class HomeStepDefs extends BaseTest {
 
     @Then("only {string} products will be displayed")
     public void onlyProductsWillBeDisplayed(String category) {
-    }
-
-    @Then("all menu and button displayed properly")
-    public void allMenuAndButtonDisplayedProperly() {
 
     }
+
+
 }
