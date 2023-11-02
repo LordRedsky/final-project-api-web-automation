@@ -5,12 +5,16 @@ Feature: HOMEPAGE
     Given  user is on homepage
 
   @homepage-positive
-  Scenario Outline: HOMEPAGE: show product categories
-    When user click "<category>" button
-    Then only "<category>" products will be displayed
+  Scenario: HOMEPAGE: validated all menu and button is displayed properly
+    Then all menu and button displayed properly
 
-    Examples:
-      | category |
-      | Phone    |
-      | Laptop   |
-      | Monitor  |
+
+#  Scenario Outline: HOMEPAGE: show product categories
+#    When user click "<category>" button
+#    Then only "<category>" products will be displayed
+#
+#    Examples:
+#      | category |
+#      | Phone    |
+#      | Laptop   |
+#      | Monitor  |

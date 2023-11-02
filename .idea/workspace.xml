@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/hooks/CucumberHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/Homepage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/runner/CucumberWEBTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/BrowserSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/HomeStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/web/features/01_SignUp.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/Homepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/HomeStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/HomeStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,17 +59,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "web",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/test/java/com/redsky/web/stepDefs",
-    "onboarding.tips.debug.path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/main/java/org/rizkiamin/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;web&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/test/java/com/redsky/web/stepDefs&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/main/java/org/rizkiamin/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.redsky.web.stepDefs" />
@@ -85,7 +79,7 @@
       <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\resources\api\" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: 01_SignUp">
+  <component name="RunManager" selected="Cucumber Java.Scenario: HOMEPAGE: validated all menu and button is displayed properly">
     <configuration name="Feature: 01_SignUp" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/01_SignUp.feature" />
@@ -105,15 +99,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: PUT: update data user from required only to full data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: HOMEPAGE: validated all menu and button is displayed properly" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/03_PUT.feature" />
-      <option name="GLUE" value="com.redsky.api.stepDef" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" />
+      <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^PUT\: update data user from required only to full data$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^PUT\: update data user from required only to full data$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: PUT: update data user from required only to full data" />
+      <option name="NAME_FILTER" value="^HOMEPAGE\: validated all menu and button is displayed properly$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^HOMEPAGE\: validated all menu and button is displayed properly$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: HOMEPAGE: validated all menu and button is displayed properly" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -191,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: HOMEPAGE: validated all menu and button is displayed properly" />
         <item itemvalue="Cucumber Java.Feature: 01_SignUp" />
         <item itemvalue="Gradle.CucumberWEBTest" />
         <item itemvalue="Cucumber Java.Scenario: PUT: update user data (firstName and lastName0 with boundary length character" />
         <item itemvalue="Cucumber Java.Scenario: PUT: update user data (firstName and lastName) with empty values" />
-        <item itemvalue="Cucumber Java.Scenario: PUT: update data user from required only to full data" />
       </list>
     </recent_temporary>
   </component>
