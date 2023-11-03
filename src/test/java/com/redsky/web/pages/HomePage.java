@@ -11,10 +11,10 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Homepage {
+public class HomePage {
     WebDriver driver;
 
-    public Homepage(WebDriver driver) {
+    public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 

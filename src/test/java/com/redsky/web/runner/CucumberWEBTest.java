@@ -6,12 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        glue = {"com.redsky.api"},
+        glue = {"com.redsky.web"},
         features = {"src/test/resources/web/features"},
         plugin = {
                 "pretty",
-                "html:reports/test-report-api.html",
-                "json:reports/test-report-api.json"
+                "html:reports/test-report-web.html",
+                "json:reports/test-report-web.json"
         },
         monochrome = true
 )

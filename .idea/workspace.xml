@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/SignupPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/SignupDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/RandomAlphabet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/RandomNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/RandomSpecialCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/web/features/02_SignUp.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/Homepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/test-report-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report-api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/test-report-api.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report-api.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/runner/CucumberWEBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/runner/CucumberWEBTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/BrowserSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/BrowserSetup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/HomeStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/HomeStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/01_Homepage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/01_SignUp.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +35,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -47,7 +62,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -64,7 +79,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;web&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;SignUp-Features&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/test/java/com/redsky/web/stepDefs&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/main/java/org/rizkiamin/Main.java&quot;
@@ -79,15 +94,15 @@
       <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\resources\api\" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: 00_Homepage">
-    <configuration name="Feature: 00_Homepage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: 02_SignUp">
+    <configuration name="Feature: 01_Homepage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/01_Homepage.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: 00_Homepage" />
+      <option name="SUGGESTED_NAME" value="Feature: 01_Homepage" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -99,14 +114,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: 01_SignUp" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: 02_SignUp" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/01_SignUp.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/02_SignUp.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: 01_SignUp" />
+      <option name="SUGGESTED_NAME" value="Feature: 02_SignUp" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -118,15 +133,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: HOMEPAGE: validated all menu and button is displayed properly" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user signup with unregistered username and password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/02_SignUp.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^HOMEPAGE\: validated all menu and button is displayed properly$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^HOMEPAGE\: validated all menu and button is displayed properly$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: HOMEPAGE: validated all menu and button is displayed properly" />
+      <option name="NAME_FILTER" value="^user signup with unregistered username and password$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user signup with unregistered username and password$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user signup with unregistered username and password" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -138,15 +153,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: PUT: update user data (firstName and lastName0 with boundary length character" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user signup with various negative test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/api/features/03_PUT.feature" />
-      <option name="GLUE" value="com.redsky.api.stepDef" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/02_SignUp.feature" />
+      <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^PUT\: update user data \(firstName and lastName0 with boundary length character$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^PUT\: update user data \(firstName and lastName0 with boundary length character$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: PUT: update user data (firstName and lastName0 with boundary length character" />
+      <option name="NAME_FILTER" value="^user signup with various negative test$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user signup with various negative test$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user signup with various negative test" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -184,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: 00_Homepage" />
-        <item itemvalue="Cucumber Java.Scenario: HOMEPAGE: validated all menu and button is displayed properly" />
-        <item itemvalue="Cucumber Java.Feature: 01_SignUp" />
+        <item itemvalue="Cucumber Java.Feature: 02_SignUp" />
+        <item itemvalue="Cucumber Java.Scenario: user signup with various negative test" />
+        <item itemvalue="Cucumber Java.Scenario: user signup with unregistered username and password" />
+        <item itemvalue="Cucumber Java.Feature: 01_Homepage" />
         <item itemvalue="Gradle.CucumberWEBTest" />
-        <item itemvalue="Cucumber Java.Scenario: PUT: update user data (firstName and lastName0 with boundary length character" />
       </list>
     </recent_temporary>
   </component>
