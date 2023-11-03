@@ -13,7 +13,7 @@ Feature: SIGNUP
     Then user will get a message said "Sign up successful."
     And user will be directed back to homepage
 
-  @signup-positive
+  @signup-negative
   Scenario Outline: user signup with various negative test
     And user input username with "<username>"
     And user input password with "<password>"

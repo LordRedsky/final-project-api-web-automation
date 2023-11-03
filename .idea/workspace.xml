@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/SignupPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/SignupDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/RandomAlphabet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/RandomNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/RandomSpecialCharacter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/web/features/02_SignUp.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/test-report-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report-api.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/test-report-api.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report-api.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/runner/CucumberWEBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/runner/CucumberWEBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/BrowserSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/BrowserSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/HomeStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/HomeStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/utility/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/00_Homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/01_Homepage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/01_SignUp.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
