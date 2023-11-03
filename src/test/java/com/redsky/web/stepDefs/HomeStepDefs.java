@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 public class HomeStepDefs extends BaseTest {
 
-    HomePage homepage = new HomePage(driver);;
+    HomePage homepage = new HomePage(driver);
 
     @Then("all menu and button displayed properly")
     public void allMenuAndButtonDisplayedProperly() throws InterruptedException {
