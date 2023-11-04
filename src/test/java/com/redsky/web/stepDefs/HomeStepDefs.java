@@ -13,6 +13,7 @@ public class HomeStepDefs extends BaseTest {
     @Then("all menu and button displayed properly")
     public void allMenuAndButtonDisplayedProperly() throws InterruptedException {
         Thread.sleep(1000);
+        homepage = new HomePage(driver);
         homepage.validateHomepage();
     }
 
