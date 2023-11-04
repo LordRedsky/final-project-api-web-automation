@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/ContactPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/ContactStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/web/features/05_Contact.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
