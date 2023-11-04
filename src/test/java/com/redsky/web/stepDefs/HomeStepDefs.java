@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 public class HomeStepDefs extends BaseTest {
 
-    HomePage homepage = new HomePage(driver);
+    HomePage homepage;
 
     @Then("all menu and button displayed properly")
     public void allMenuAndButtonDisplayedProperly() throws InterruptedException {
@@ -30,7 +30,7 @@ public class HomeStepDefs extends BaseTest {
 
     @And("user will be directed back to homepage")
     public void userWillBeDirectedBackToHomepage() {
-        homepage.goToHomepage();
+        homepage = new HomePage(driver);
         homepage.validateHomepage();
     }
 }

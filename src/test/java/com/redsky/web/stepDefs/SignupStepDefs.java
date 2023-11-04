@@ -6,7 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class SignupDefs extends BaseTest {
+public class SignupStepDefs extends BaseTest {
     SignupPage signupPage;
 
     @When("user click signup menu")
@@ -33,6 +33,7 @@ public class SignupDefs extends BaseTest {
 
     @Then("user will get a message said {string}")
     public void userWillGetAMessageSaid(String message) {
+        signupPage = new SignupPage(driver);
         signupPage.validationResponseMessage(message);
     }
 

@@ -1,6 +1,5 @@
 package com.redsky.web.pages;
 
-import com.redsky.web.stepDefs.SignupDefs;
 import com.redsky.web.utility.RandomAlphabet;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -74,7 +73,7 @@ public class SignupPage {
             case "generate_new_password":
                 String random_password = RandomAlphabet.generate(10);
                 driver.findElement(passwordTextBox).sendKeys(random_password);
-                prefs.put("new_password", password);
+                prefs.put("new_password", random_password);
                 break;
             case "existing_password":
                 String existing_pass = prefs.get("new_password", null);
