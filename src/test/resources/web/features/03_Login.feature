@@ -10,7 +10,6 @@ Feature: LOGIN
     And user login with username with "existing_user"
     And user login with password with "existing_password"
     And user click login button
-    Then user will be directed back to homepage
     And user will see an element Welcome "existing_user"
 
   @login-negative

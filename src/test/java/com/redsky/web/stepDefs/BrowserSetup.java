@@ -9,7 +9,7 @@ public class BrowserSetup extends BaseTest {
     HomePage homepage;
 
     @Given("user is on homepage")
-    public void userIsOnHomepage() {
+    public void userIsOnHomepage() throws InterruptedException {
         homepage = new HomePage(driver);
         homepage.goToHomepage();
         homepage.validateHomepage();

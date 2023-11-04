@@ -17,21 +17,23 @@ public class HomeStepDefs extends BaseTest {
         homepage.validateHomepage();
     }
 
-    @When("user click {string} button")
-    public void userClickButton(String category) throws InterruptedException {
-        Thread.sleep(1000);
-        homepage = new HomePage(driver);
-    }
-
-    @Then("only {string} products will be displayed")
-    public void onlyProductsWillBeDisplayed(String category) {
-
-    }
+//    @When("user click {string} button")
+//    public void userClickButton(String category) throws InterruptedException {
+//        Thread.sleep(1000);
+//        homepage = new HomePage(driver);
+//    }
+//
+//    @Then("only {string} products will be displayed")
+//    public void onlyProductsWillBeDisplayed(String category) {
+//
+//    }
 
 
     @And("user will be directed back to homepage")
-    public void userWillBeDirectedBackToHomepage() {
+    public void userWillBeDirectedBackToHomepage() throws InterruptedException {
         homepage = new HomePage(driver);
+//        homepage.goToHomepage();
+//        Thread.sleep(1500);
         homepage.validateHomepage();
     }
 }

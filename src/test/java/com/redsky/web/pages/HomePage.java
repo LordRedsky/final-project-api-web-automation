@@ -35,7 +35,7 @@ public class HomePage {
         driver.get("https://www.demoblaze.com/");
     }
 
-    public void validateHomepage() {
+    public void validateHomepage() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement titleElement = wait.until(ExpectedConditions.visibilityOfElementLocated(productStoreTitle));
         WebElement homeElement = wait.until(ExpectedConditions.visibilityOfElementLocated(homeMenu));
@@ -48,6 +48,7 @@ public class HomePage {
         WebElement laptopsElement = wait.until(ExpectedConditions.visibilityOfElementLocated(laptopsMenu));
         WebElement monitorsElement = wait.until(ExpectedConditions.visibilityOfElementLocated(monitorsMenu));
 
+        Thread.sleep(1500);
         assertEquals("PRODUCT STORE", titleElement.getText());
         assertTrue(titleElement.isDisplayed());
         assertTrue(homeElement.isDisplayed());
