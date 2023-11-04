@@ -48,7 +48,7 @@ public class HomePage {
         WebElement laptopsElement = wait.until(ExpectedConditions.visibilityOfElementLocated(laptopsMenu));
         WebElement monitorsElement = wait.until(ExpectedConditions.visibilityOfElementLocated(monitorsMenu));
 
-        Thread.sleep(1500);
+//        Thread.sleep(1500);
         assertEquals("PRODUCT STORE", titleElement.getText());
         assertTrue(titleElement.isDisplayed());
         assertTrue(homeElement.isDisplayed());
