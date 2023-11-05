@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="" />
+    <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +81,26 @@
       <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\resources\api\" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: user can add all products to the cart">
+  <component name="RunManager" selected="Cucumber Java.Feature: 06_Cart">
+    <configuration name="Feature: 06_Cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
+      <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProject-AutomationWebAPI.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: 06_Cart" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: user can add all products to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
@@ -160,33 +181,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: user can delete one ot the products from cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
-      <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^user can delete one ot the products from cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can delete one ot the products from cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: user can delete one ot the products from cart" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: 06_Cart" />
         <item itemvalue="Cucumber Java.Scenario: user can add all products to the cart" />
         <item itemvalue="Cucumber Java.Scenario: user can add one product to cart" />
         <item itemvalue="Cucumber Java.Scenario: user can add the quantity of each products more than one on the cart and can remove one quantity of each" />
         <item itemvalue="Cucumber Java.Scenario: user can add the quantity of the products more than one on the cart and can remove one quantity" />
-        <item itemvalue="Cucumber Java.Scenario: user can delete one ot the products from cart" />
       </list>
     </recent_temporary>
   </component>
