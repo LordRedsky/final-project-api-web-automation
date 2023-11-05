@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CheckoutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CheckoutStepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/LoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/LoginStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api/features/02_POST.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/features/02_POST.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,15 +88,15 @@
       <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\resources\api\" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: 06_Cart">
-    <configuration name="Feature: 06_Cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: user fill the checkout form data with blank credit card fields">
+    <configuration name="Feature: 07_Checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: 06_Cart" />
+      <option name="SUGGESTED_NAME" value="Feature: 07_Checkout" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -101,15 +108,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: user can add all products to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user back to cart page from checkout form" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^user can add all products to the cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can add all products to the cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: user can add all products to the cart" />
+      <option name="NAME_FILTER" value="^user back to cart page from checkout form$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user back to cart page from checkout form$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user back to cart page from checkout form" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -121,15 +128,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: user can add one product to cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user checkout with blank payment data fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^user can add one product to cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can add one product to cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: user can add one product to cart" />
+      <option name="NAME_FILTER" value="^user checkout with blank payment data fields$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user checkout with blank payment data fields$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user checkout with blank payment data fields" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -141,15 +148,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: user can add the quantity of each products more than one on the cart and can remove one quantity of each" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user checkout with valid payment data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^user can add the quantity of each products more than one on the cart and can remove one quantity of each$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can add the quantity of each products more than one on the cart and can remove one quantity of each$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: user can add the quantity of each products more than one on the cart and can remove one quantity of each" />
+      <option name="NAME_FILTER" value="^user checkout with valid payment data$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user checkout with valid payment data$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user checkout with valid payment data" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -161,15 +168,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: user can add the quantity of the products more than one on the cart and can remove one quantity" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user fill the checkout form data with blank credit card fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^user can add the quantity of the products more than one on the cart and can remove one quantity$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can add the quantity of the products more than one on the cart and can remove one quantity$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: user can add the quantity of the products more than one on the cart and can remove one quantity" />
+      <option name="NAME_FILTER" value="^user fill the checkout form data with blank credit card fields$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user fill the checkout form data with blank credit card fields$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user fill the checkout form data with blank credit card fields" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -183,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: 06_Cart" />
-        <item itemvalue="Cucumber Java.Scenario: user can add all products to the cart" />
-        <item itemvalue="Cucumber Java.Scenario: user can add one product to cart" />
-        <item itemvalue="Cucumber Java.Scenario: user can add the quantity of each products more than one on the cart and can remove one quantity of each" />
-        <item itemvalue="Cucumber Java.Scenario: user can add the quantity of the products more than one on the cart and can remove one quantity" />
+        <item itemvalue="Cucumber Java.Scenario: user fill the checkout form data with blank credit card fields" />
+        <item itemvalue="Cucumber Java.Feature: 07_Checkout" />
+        <item itemvalue="Cucumber Java.Scenario: user checkout with blank payment data fields" />
+        <item itemvalue="Cucumber Java.Scenario: user back to cart page from checkout form" />
+        <item itemvalue="Cucumber Java.Scenario: user checkout with valid payment data" />
       </list>
     </recent_temporary>
   </component>

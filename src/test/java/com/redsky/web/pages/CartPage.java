@@ -52,16 +52,24 @@ public class CartPage {
     }
 
     public void validatedOnCartPage() {
+        Preferences prefs = Preferences.userNodeForPackage(SignupPage.class);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         WebElement titleElement = wait.until(ExpectedConditions.visibilityOfElementLocated(cartTitle));
+        WebElement totalPriceFromCart = wait.until(ExpectedConditions.visibilityOfElementLocated(totalPrice));
+
+//        System.out.println("from cart " + totalPriceFromCart.getText());
+        String priceFromCart = "Total: " + totalPriceFromCart.getText();
+        prefs.put("cartPrice", priceFromCart);
 
         assertTrue(titleElement.isDisplayed());
         assertEquals("Products", titleElement.getText());
     }
 
-    public void addProductsToCart(List<String> products) {
+    public void addProductsToCart(List<String> products) throws InterruptedException {
+//        System.out.println(products);
         for (String product : products) {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+            Thread.sleep(1000);
             WebElement productElement = wait.until(
                     ExpectedConditions.elementToBeClickable(
                             productNameOnHomePage(product)
@@ -69,6 +77,7 @@ public class CartPage {
             );
             productElement.click();
 
+            Thread.sleep(1000);
             WebElement addToCartElement = wait.until(
                     ExpectedConditions.elementToBeClickable(
                             addToCartButton

@@ -6,6 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.util.Collections;
 import java.util.List;
 
 public class CartStepDefs extends BaseTest {
@@ -13,7 +14,7 @@ public class CartStepDefs extends BaseTest {
     CartPage cartPage;
 
     @When("user click add to cart button of these products:")
-    public void userClickAddToCartButtonOfTheseProducts(List<String> products) {
+    public void userClickAddToCartButtonOfTheseProducts(List<String> products) throws InterruptedException {
         cartPage = new CartPage(driver);
         cartPage.addProductsToCart(products);
     }
@@ -66,4 +67,20 @@ public class CartStepDefs extends BaseTest {
     public void theCartShouldContainAllProducts() {
         cartPage.validatdAllProductOnCart();
     }
+
+    @And("user add {string} product to cart")
+    public void userAddProductToCart(String addedProduct) throws InterruptedException {
+        cartPage = new CartPage(driver);
+        if (addedProduct.equals("one")) {
+            List<String> product = Collections.singletonList("Samsung galaxy s6");
+            cartPage.addProductsToCart(product);
+        }
+    }
+
+    @And("user will be directed back to cart page")
+    public void userWillBeDirectedBackToCartPage() {
+        cartPage = new CartPage(driver);
+        cartPage.validatedOnCartPage();
+    }
+
 }

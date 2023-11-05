@@ -36,4 +36,15 @@ public class LoginStepDefs extends BaseTest {
         loginPage.validationAlreadyLoggedIn(username);
     }
 
+    @When("user already logged in")
+    public void userAlreadyLoggedIn() throws InterruptedException {
+        loginPage = new LoginPage(driver);
+        Thread.sleep(1000);
+        loginPage.goToLoginPage();
+        Thread.sleep(1000);
+        loginPage.inputUsername("existing_user");
+        loginPage.inputPassword("existing_password");
+        Thread.sleep(1000);
+        loginPage.clickLoginButton();
+    }
 }

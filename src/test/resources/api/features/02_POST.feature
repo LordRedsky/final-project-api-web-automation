@@ -5,7 +5,7 @@ Feature: POST
     Given all request header is properly setup
 
   @post-positive
-  # requred fields is only first name, last name and email
+  # required fields is only first name, last name and email
   Scenario: POST: create new user with required body fields only
     And user prepare "required fields" body for "POST" method with:
       | firstName | redsky           |
