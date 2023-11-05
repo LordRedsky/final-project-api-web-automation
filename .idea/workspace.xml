@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,18 +63,18 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "web",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/test/java/com/redsky/web/stepDefs",
-    "onboarding.tips.debug.path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/main/java/org/rizkiamin/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;web&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/test/java/com/redsky/web/stepDefs&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/main/java/org/rizkiamin/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.redsky.web.stepDefs" />
@@ -84,15 +84,16 @@
       <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\resources\api\" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: submit contact form with various negative scenarios">
-    <configuration name="Feature: 04_About" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: user can add one product to cart">
+    <configuration name="Scenario: user can add all products to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/04_About.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: 04_About" />
+      <option name="NAME_FILTER" value="^user can add all products to the cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can add all products to the cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user can add all products to the cart" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -104,14 +105,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: 05_Contact" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user can add one product to cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/05_Contact.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: 05_Contact" />
+      <option name="NAME_FILTER" value="^user can add one product to cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can add one product to cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user can add one product to cart" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -123,15 +125,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: submit contact form with various negative scenarios" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user can add the quantity of each products more than one on the cart and can remove one quantity of each" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/05_Contact.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^submit contact form with various negative scenarios$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^submit contact form with various negative scenarios$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: submit contact form with various negative scenarios" />
+      <option name="NAME_FILTER" value="^user can add the quantity of each products more than one on the cart and can remove one quantity of each$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can add the quantity of each products more than one on the cart and can remove one quantity of each$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user can add the quantity of each products more than one on the cart and can remove one quantity of each" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -143,15 +145,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: user input with valid data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user can add the quantity of the products more than one on the cart and can remove one quantity" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/05_Contact.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^user input with valid data$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user input with valid data$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: user input with valid data" />
+      <option name="NAME_FILTER" value="^user can add the quantity of the products more than one on the cart and can remove one quantity$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can add the quantity of the products more than one on the cart and can remove one quantity$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user can add the quantity of the products more than one on the cart and can remove one quantity" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -163,15 +165,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: user visit about us page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user can delete one ot the products from cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/04_About.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^user visit about us page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user visit about us page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: user visit about us page" />
+      <option name="NAME_FILTER" value="^user can delete one ot the products from cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can delete one ot the products from cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user can delete one ot the products from cart" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -185,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: submit contact form with various negative scenarios" />
-        <item itemvalue="Cucumber Java.Feature: 05_Contact" />
-        <item itemvalue="Cucumber Java.Scenario: user input with valid data" />
-        <item itemvalue="Cucumber Java.Feature: 04_About" />
-        <item itemvalue="Cucumber Java.Scenario: user visit about us page" />
+        <item itemvalue="Cucumber Java.Scenario: user can add one product to cart" />
+        <item itemvalue="Cucumber Java.Scenario: user can add all products to the cart" />
+        <item itemvalue="Cucumber Java.Scenario: user can add the quantity of each products more than one on the cart and can remove one quantity of each" />
+        <item itemvalue="Cucumber Java.Scenario: user can add the quantity of the products more than one on the cart and can remove one quantity" />
+        <item itemvalue="Cucumber Java.Scenario: user can delete one ot the products from cart" />
       </list>
     </recent_temporary>
   </component>
