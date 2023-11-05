@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" afterDir="false" />
-    </list>
+    <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +79,7 @@
       <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\resources\api\" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: user can add one product to cart">
+  <component name="RunManager" selected="Cucumber Java.Scenario: user can add all products to the cart">
     <configuration name="Scenario: user can add all products to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
@@ -187,8 +182,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: user can add one product to cart" />
         <item itemvalue="Cucumber Java.Scenario: user can add all products to the cart" />
+        <item itemvalue="Cucumber Java.Scenario: user can add one product to cart" />
         <item itemvalue="Cucumber Java.Scenario: user can add the quantity of each products more than one on the cart and can remove one quantity of each" />
         <item itemvalue="Cucumber Java.Scenario: user can add the quantity of the products more than one on the cart and can remove one quantity" />
         <item itemvalue="Cucumber Java.Scenario: user can delete one ot the products from cart" />

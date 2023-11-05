@@ -271,9 +271,10 @@ public class CartPage {
                 )
         );
 
+//        System.out.println(expectedProductName.length);
         for (WebElement productName : productNameElement) {
             String nameProductOnCart = productName.getText();
-            System.out.println(nameProductOnCart);
+//            System.out.println(nameProductOnCart);
         }
     }
 
