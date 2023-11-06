@@ -31,7 +31,7 @@ public class CartStepDefs extends BaseTest {
     }
 
     @And("the total price is correct")
-    public void theTotalPriceIsCorrect() {
+    public void theTotalPriceIsCorrect() throws InterruptedException {
         cartPage.verifyTotalPrice();
     }
 

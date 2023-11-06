@@ -109,21 +109,22 @@ public class CartPage {
         }
     }
 
-    public void verifyTotalPrice() {
+    public void verifyTotalPrice() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         List<WebElement> priceElements = driver.findElements(priceCard);
         int totalPrices = 0;
 
+        Thread.sleep(1_500);
         for (WebElement priceElement : priceElements) {
             WebElement price = wait.until(ExpectedConditions.visibilityOf(priceElement));
             String nominalPriceString = price.getText();
             int nominalPriceInteger = Integer.parseInt(nominalPriceString);
-
+            Thread.sleep(1_500);
             totalPrices += nominalPriceInteger;
         }
 
         WebElement totalElements = wait.until(ExpectedConditions.visibilityOfElementLocated(totalPrice));
-
+        Thread.sleep(1_500);
         assertEquals(String.valueOf(totalPrices), totalElements.getText());
     }
 
@@ -203,18 +204,19 @@ public class CartPage {
     public void validateQuantityProduct(int totalProducts, List<String> products) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         for (String product : products) {
-            Thread.sleep(3_500);
+            Thread.sleep(4_000);
             wait.until(
                     ExpectedConditions.visibilityOfElementLocated(
                             productNameOnCartPage(product)
                     )
             );
 
-            Thread.sleep(3_500);
+            Thread.sleep(4_000);
             int totalQuantity = driver.findElements(
                     productNameOnCartPage(product)
             ).size();
 
+            Thread.sleep(1_500);
             assertEquals(totalProducts, totalQuantity);
         }
     }
