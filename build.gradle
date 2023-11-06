@@ -63,8 +63,8 @@ tasks.register("api") {
             main = "io.cucumber.core.cli.Main"
             classpath = configurations.cucumberRunTime + sourceSets.main.output + sourceSets.test.output
             args = [
-                    '--plugin', 'html:reports/test-report.html',
-                    '--plugin', 'json:reports/test-report.json',
+                    '--plugin', 'html:reports/test-report-api.html',
+                    '--plugin', 'json:reports/test-report-api.json',
                     '--plugin', 'pretty',
                     '--glue', 'com.redsky.api',
                     '--tags', "@api",
@@ -81,8 +81,8 @@ tasks.register("web") {
             main = "io.cucumber.core.cli.Main"
             classpath = configurations.cucumberRunTime + sourceSets.main.output + sourceSets.test.output
             args = [
-                    '--plugin', 'html:reports/test-report.html',
-                    '--plugin', 'json:reports/test-report.json',
+                    '--plugin', 'html:reports/test-report-web.html',
+                    '--plugin', 'json:reports/test-report-web.json',
                     '--plugin', 'pretty',
                     '--glue', 'com.redsky.web',
                     '--tags', "@web",
