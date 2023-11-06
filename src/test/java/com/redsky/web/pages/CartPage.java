@@ -153,26 +153,28 @@ public class CartPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
         for (String product : products) {
-            Thread.sleep(3_000);
+            Thread.sleep(3_500);
             wait.until(
                     ExpectedConditions.visibilityOfElementLocated(
                             productNameOnCartPage(product)
                     )
             );
-            Thread.sleep(3_000);
+            Thread.sleep(3_500);
             WebElement productRow = driver.findElement(
                     productNameOnCartPage(product)
             );
-            Thread.sleep(2_000);
+            Thread.sleep(3_500);
             WebElement deleteElement = wait.until(
                     ExpectedConditions.elementToBeClickable(
                             productRow.findElement(deleteButton)
                     )
             );
 
+            Thread.sleep(3_500);
+
             for (int i = 1; i <= totalClicks; i++) {
                 deleteElement.click();
-                Thread.sleep(3_000);
+                Thread.sleep(3_500);
             }
         }
     }
@@ -228,7 +230,7 @@ public class CartPage {
             List<WebElement> productElements = wait.until(
                     ExpectedConditions.visibilityOfAllElementsLocatedBy(productCard)
             );
-
+            Thread.sleep(3_500);
 //            System.out.println(productElements.size());
             for (int j = 0; j < productElements.size(); j++) {
                 Thread.sleep(3_500);
