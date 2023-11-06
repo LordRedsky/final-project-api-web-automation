@@ -69,7 +69,7 @@ public class CartPage {
 //        System.out.println(products);
         for (String product : products) {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-            Thread.sleep(2_000);
+            Thread.sleep(3_500);
             WebElement productElement = wait.until(
                     ExpectedConditions.elementToBeClickable(
                             productNameOnHomePage(product)
@@ -77,7 +77,7 @@ public class CartPage {
             );
             productElement.click();
 
-            Thread.sleep(2_000);
+            Thread.sleep(3_500);
             WebElement addToCartElement = wait.until(
                     ExpectedConditions.elementToBeClickable(
                             addToCartButton
@@ -153,13 +153,13 @@ public class CartPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
         for (String product : products) {
-            Thread.sleep(2_000);
+            Thread.sleep(3_000);
             wait.until(
                     ExpectedConditions.visibilityOfElementLocated(
                             productNameOnCartPage(product)
                     )
             );
-            Thread.sleep(2_000);
+            Thread.sleep(3_000);
             WebElement productRow = driver.findElement(
                     productNameOnCartPage(product)
             );
@@ -172,7 +172,7 @@ public class CartPage {
 
             for (int i = 1; i <= totalClicks; i++) {
                 deleteElement.click();
-                Thread.sleep(2_000);
+                Thread.sleep(3_000);
             }
         }
     }
@@ -201,14 +201,14 @@ public class CartPage {
     public void validateQuantityProduct(int totalProducts, List<String> products) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         for (String product : products) {
-            Thread.sleep(2_500);
+            Thread.sleep(3_500);
             wait.until(
                     ExpectedConditions.visibilityOfElementLocated(
                             productNameOnCartPage(product)
                     )
             );
 
-            Thread.sleep(2_500);
+            Thread.sleep(3_500);
             int totalQuantity = driver.findElements(
                     productNameOnCartPage(product)
             ).size();
@@ -224,14 +224,14 @@ public class CartPage {
         int totalPages = 2;
 
         for (int i = 1; i < totalPages; i++) {
-            Thread.sleep(1_500);
+            Thread.sleep(3_500);
             List<WebElement> productElements = wait.until(
                     ExpectedConditions.visibilityOfAllElementsLocatedBy(productCard)
             );
 
 //            System.out.println(productElements.size());
             for (int j = 0; j < productElements.size(); j++) {
-                Thread.sleep(2_000);
+                Thread.sleep(3_500);
                 String index_products = String.valueOf(j + 1);
                 WebElement productElement = wait.until(
                         ExpectedConditions.elementToBeClickable(
@@ -249,12 +249,12 @@ public class CartPage {
                         ExpectedConditions.elementToBeClickable(addToCartButton)
                 );
 
-                Thread.sleep(1_500);
+                Thread.sleep(3_500);
                 addToCartElement.click();
 
 
                 wait.until(ExpectedConditions.alertIsPresent()); //.accept();
-                Thread.sleep(500);
+                Thread.sleep(3_500);
                 driver.switchTo().alert().accept();
 
                 driver.navigate().back();
@@ -266,7 +266,7 @@ public class CartPage {
 
             WebElement nextElement = wait.until(ExpectedConditions.elementToBeClickable(nextButton));
             nextElement.click();
-            Thread.sleep(1_500);
+            Thread.sleep(3_500);
         }
     }
 
@@ -276,7 +276,7 @@ public class CartPage {
         String[] expectedProductName = prefs.get("listProductNames", null).split(",");
         int count = 0;
 
-        Thread.sleep(2_000);
+        Thread.sleep(3_500);
         List<WebElement> productNameElement = wait.until(
                 ExpectedConditions.visibilityOfAllElementsLocatedBy(
                         By.xpath("//*[@id=\"tbodyid\"]/tr/td[2]")
@@ -284,7 +284,7 @@ public class CartPage {
         );
         int length = productNameElement.size();
 
-        Thread.sleep(2_000);
+        Thread.sleep(3_500);
         for (WebElement productName : productNameElement) {
             String nameProductOnCart = productName.getText();
 //            System.out.println("dari element: "+nameProductOnCart);
