@@ -48,11 +48,12 @@ public class CheckoutPage {
         placeOrderBtnElement.click();
     }
 
-    public void validateOnCheckoutForm() {
+    public void validateOnCheckoutForm() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         WebElement titleElement = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(checkoutTitle)
         );
+        Thread.sleep(2_000);
 
         assertTrue(titleElement.isDisplayed());
         assertEquals("Place order", titleElement.getText());

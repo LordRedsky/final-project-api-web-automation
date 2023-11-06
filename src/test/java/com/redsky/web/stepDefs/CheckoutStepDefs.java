@@ -17,7 +17,7 @@ public class CheckoutStepDefs extends BaseTest {
     }
 
     @And("user will see place order form")
-    public void userWillSeePlaceOrderForm() {
+    public void userWillSeePlaceOrderForm() throws InterruptedException {
         checkoutPage.validateOnCheckoutForm();
         checkoutPage.validatedTotalPrice();
     }

@@ -69,7 +69,7 @@ public class CartPage {
 //        System.out.println(products);
         for (String product : products) {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-            Thread.sleep(1000);
+            Thread.sleep(2_000);
             WebElement productElement = wait.until(
                     ExpectedConditions.elementToBeClickable(
                             productNameOnHomePage(product)
@@ -77,7 +77,7 @@ public class CartPage {
             );
             productElement.click();
 
-            Thread.sleep(1000);
+            Thread.sleep(2_000);
             WebElement addToCartElement = wait.until(
                     ExpectedConditions.elementToBeClickable(
                             addToCartButton
@@ -153,14 +153,17 @@ public class CartPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
         for (String product : products) {
+            Thread.sleep(2_000);
             wait.until(
                     ExpectedConditions.visibilityOfElementLocated(
                             productNameOnCartPage(product)
                     )
             );
+            Thread.sleep(2_000);
             WebElement productRow = driver.findElement(
                     productNameOnCartPage(product)
             );
+            Thread.sleep(2_000);
             WebElement deleteElement = wait.until(
                     ExpectedConditions.elementToBeClickable(
                             productRow.findElement(deleteButton)
@@ -169,7 +172,7 @@ public class CartPage {
 
             for (int i = 1; i <= totalClicks; i++) {
                 deleteElement.click();
-                Thread.sleep(1000);
+                Thread.sleep(2_000);
             }
         }
     }
@@ -198,12 +201,14 @@ public class CartPage {
     public void validateQuantityProduct(int totalProducts, List<String> products) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         for (String product : products) {
+            Thread.sleep(1_500);
             wait.until(
                     ExpectedConditions.visibilityOfElementLocated(
                             productNameOnCartPage(product)
                     )
             );
 
+            Thread.sleep(1_500);
             int totalQuantity = driver.findElements(
                     productNameOnCartPage(product)
             ).size();
@@ -219,14 +224,14 @@ public class CartPage {
         int totalPages = 2;
 
         for (int i = 1; i < totalPages; i++) {
-            Thread.sleep(1000);
+            Thread.sleep(1_500);
             List<WebElement> productElements = wait.until(
                     ExpectedConditions.visibilityOfAllElementsLocatedBy(productCard)
             );
 
 //            System.out.println(productElements.size());
             for (int j = 0; j < productElements.size(); j++) {
-                Thread.sleep(1500);
+                Thread.sleep(2_000);
                 String index_products = String.valueOf(j + 1);
                 WebElement productElement = wait.until(
                         ExpectedConditions.elementToBeClickable(
@@ -244,7 +249,7 @@ public class CartPage {
                         ExpectedConditions.elementToBeClickable(addToCartButton)
                 );
 
-                Thread.sleep(500);
+                Thread.sleep(1_500);
                 addToCartElement.click();
 
 
@@ -261,7 +266,7 @@ public class CartPage {
 
             WebElement nextElement = wait.until(ExpectedConditions.elementToBeClickable(nextButton));
             nextElement.click();
-            Thread.sleep(500);
+            Thread.sleep(1_500);
         }
     }
 

@@ -73,6 +73,7 @@ public class CartStepDefs extends BaseTest {
         cartPage = new CartPage(driver);
         if (addedProduct.equals("one")) {
             List<String> product = Collections.singletonList("Samsung galaxy s6");
+            Thread.sleep(1_500);
             cartPage.addProductsToCart(product);
         }
     }
