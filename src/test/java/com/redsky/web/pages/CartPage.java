@@ -173,8 +173,8 @@ public class CartPage {
 //            Thread.sleep(1_500);
 
             for (int i = 1; i <= totalClicks; i++) {
+                Thread.sleep(2_500);
                 deleteElement.click();
-                Thread.sleep(3_500);
             }
         }
     }
