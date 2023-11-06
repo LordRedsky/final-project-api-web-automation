@@ -74,9 +74,9 @@ Feature: CART
       | Nexus 6           |
     And the total price is correct
 
-    @cart-boundaries
-    Scenario: user can add all products to the cart
-      When user click add to cart for all products on cart
-      And user go to cart page
-      Then the cart should contain all products
-      And the total price is correct
+  @cart-boundaries
+  Scenario: user can add all products to the cart
+    When user click add to cart for all products on cart
+    And user go to cart page
+    Then the cart should contain all products
+    And the total price is correct

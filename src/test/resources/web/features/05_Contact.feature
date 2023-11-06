@@ -19,7 +19,14 @@ Feature: CONTACT
     Then user will be directed back to homepage
 
   @contact-negative
-    #All Failed (response message always <Thanks for the message!!> )
+
+  #Scenario Testing
+   #1 all fields empty
+   #2 email fields empty
+   #3 name fields empty
+   #4 message fields empty
+   #5 invalid email format
+  #All FAILED because response message always 'Thanks for the message!!'
   Scenario Outline: submit contact form with various negative scenarios
     And user input contact email with "<email>"
     And user input contact name with "<name>"

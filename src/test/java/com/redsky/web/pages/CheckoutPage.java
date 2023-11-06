@@ -22,7 +22,6 @@ public class CheckoutPage {
     By totalFromCheckoutForm = By.id("totalm");
     By checkoutTitle = By.xpath("//*[@id=\"orderModalLabel\"]");
     By totalFromCheckoutPage = By.id("totalm");
-    //    "//*[@id="totalm"]"
     By nameTextBox = By.xpath("//*[@id=\"name\"]");
     By countryTextBox = By.xpath("//*[@id=\"country\"]");
     By cityTextBox = By.xpath("//*[@id=\"city\"]");
@@ -62,11 +61,8 @@ public class CheckoutPage {
 
     public void validatedTotalPrice() {
         Preferences prefs = Preferences.userNodeForPackage(SignupPage.class);
-//        String priceFromCartPage = driver.findElement(totalPriceFromCartPage).getText();
         String priceFromCheckoutForm = driver.findElement(totalFromCheckoutPage).getText();
 
-//        System.out.println(priceFromCartPage);
-//        System.out.println("from chcekout" + priceFromCheckoutForm);
         String priceFromCartPage = prefs.get("cartPrice", null);
 
         assertTrue(priceFromCartPage.contains(priceFromCheckoutForm));

@@ -1,21 +1,14 @@
 package com.redsky.web.stepDefs;
 
-import com.redsky.web.pages.CartPage;
 import com.redsky.web.pages.CheckoutPage;
 import com.redsky.web.utility.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
-import java.util.Collections;
-import java.util.List;
 import java.util.Map;
 
 public class CheckoutStepDefs extends BaseTest {
-    //    @And("user add {string} product to cart")
-//    public void userAddProductToCart(String productQuantity) {
-//    }
     CheckoutPage checkoutPage;
-//    CartPage cartPage;
 
     @And("user click place order button")
     public void userClickPlaceOrderButton() {
@@ -39,7 +32,6 @@ public class CheckoutStepDefs extends BaseTest {
         String year = formData.get("Year");
 
         checkoutPage.fillTheCheckoutForm(name, country, city, cc, month, year);
-
     }
 
     @Then("user click purchase button")
@@ -75,7 +67,8 @@ public class CheckoutStepDefs extends BaseTest {
                     "Manado",
                     "232425",
                     "Oktober",
-                    "2023");
+                    "2023"
+            );
         } else if (fillIndicator.equals("cc_fields_blank")) {
             checkoutPage.fillTheCheckoutForm(
                     "Redsky",
@@ -83,7 +76,17 @@ public class CheckoutStepDefs extends BaseTest {
                     "Manado",
                     "",
                     "Oktober",
-                    "2023");
+                    "2023"
+            );
+        } else if (fillIndicator.equals("only_name_and_cc")) {
+            checkoutPage.fillTheCheckoutForm(
+                    "Redsky",
+                    "Indonesia",
+                    "Manado",
+                    "232425",
+                    "Oktober",
+                    "2023"
+            );
         }
     }
 }
