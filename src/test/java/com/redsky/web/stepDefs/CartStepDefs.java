@@ -43,7 +43,7 @@ public class CartStepDefs extends BaseTest {
     @And("user click delete button {int} times for these products:")
     public void userClickDeleteButtonTimesForTheseProducts(int clicks, List<String> products) throws InterruptedException {
         cartPage.removeItemQuantity(clicks, products);
-        Thread.sleep(3_000);
+        Thread.sleep(1_500);
     }
 
     @When("user click add to cart button {int} times for these products:")
@@ -62,8 +62,9 @@ public class CartStepDefs extends BaseTest {
     @When("user click add to cart for all products on cart")
     public void userClickAddToCartForAllProductsOnCart() throws InterruptedException {
         cartPage = new CartPage(driver);
+        Thread.sleep(1_500);
         cartPage.addAllProductToCart();
-        Thread.sleep(3_500);
+        Thread.sleep(500);
     }
 
     @Then("the cart should contain all products")

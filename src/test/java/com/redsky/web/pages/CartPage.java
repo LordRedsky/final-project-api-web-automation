@@ -170,7 +170,7 @@ public class CartPage {
                     )
             );
 
-            Thread.sleep(3_500);
+//            Thread.sleep(1_500);
 
             for (int i = 1; i <= totalClicks; i++) {
                 deleteElement.click();
