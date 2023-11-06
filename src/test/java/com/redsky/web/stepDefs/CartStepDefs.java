@@ -64,8 +64,8 @@ public class CartStepDefs extends BaseTest {
     }
 
     @Then("the cart should contain all products")
-    public void theCartShouldContainAllProducts() {
-        cartPage.validatdAllProductOnCart();
+    public void theCartShouldContainAllProducts() throws InterruptedException {
+        cartPage.validatedAllProductOnCart();
     }
 
     @And("user add {string} product to cart")

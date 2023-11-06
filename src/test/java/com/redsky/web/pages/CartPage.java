@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.prefs.Preferences;
 
@@ -29,7 +30,6 @@ public class CartPage {
     By totalPrice = By.id("totalp");
     By priceCard = By.xpath("//*[@id=\"tbodyid\"]/tr/td[3]");
     By deleteButton = By.xpath("//td[4]/a");
-
 
 
     private By productNameOnHomePage(String name) {
@@ -218,7 +218,7 @@ public class CartPage {
         List<String> allProductNames = new ArrayList<>();
         int totalPages = 2;
 
-        for (int i = 1; i < totalPages ; i++) {
+        for (int i = 1; i < totalPages; i++) {
             Thread.sleep(1000);
             List<WebElement> productElements = wait.until(
                     ExpectedConditions.visibilityOfAllElementsLocatedBy(productCard)
@@ -226,7 +226,7 @@ public class CartPage {
 
 //            System.out.println(productElements.size());
             for (int j = 0; j < productElements.size(); j++) {
-                Thread.sleep(1000);
+                Thread.sleep(1500);
                 String index_products = String.valueOf(j + 1);
                 WebElement productElement = wait.until(
                         ExpectedConditions.elementToBeClickable(
@@ -236,19 +236,19 @@ public class CartPage {
                         )
                 );
 
-               String productNameString = productElement.getText();
-               allProductNames.add(productNameString);
-               productElement.click();
+                String productNameString = productElement.getText();
+                allProductNames.add(productNameString);
+                productElement.click();
 
-               WebElement addToCartElement = wait.until(
-                 ExpectedConditions.elementToBeClickable(addToCartButton)
-               );
+                WebElement addToCartElement = wait.until(
+                        ExpectedConditions.elementToBeClickable(addToCartButton)
+                );
 
                 Thread.sleep(500);
-               addToCartElement.click();
+                addToCartElement.click();
 
 
-               wait.until(ExpectedConditions.alertIsPresent()); //.accept();
+                wait.until(ExpectedConditions.alertIsPresent()); //.accept();
                 Thread.sleep(500);
                 driver.switchTo().alert().accept();
 
@@ -263,28 +263,38 @@ public class CartPage {
             nextElement.click();
             Thread.sleep(500);
         }
-
-//        System.out.println(allProductNames);
-//        System.out.println(prefs.get("listProductNames", null));
     }
 
-    public void validatdAllProductOnCart() {
+    public void validatedAllProductOnCart() throws InterruptedException {
         Preferences prefs = Preferences.userNodeForPackage(SignupPage.class);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         String[] expectedProductName = prefs.get("listProductNames", null).split(",");
+        int count = 0;
 
-        List<String> actualNameProductOnCart = new ArrayList<>();
+        Thread.sleep(2_000);
         List<WebElement> productNameElement = wait.until(
                 ExpectedConditions.visibilityOfAllElementsLocatedBy(
                         By.xpath("//*[@id=\"tbodyid\"]/tr/td[2]")
                 )
         );
+        int length = productNameElement.size();
 
-//        System.out.println(expectedProductName.length);
+        Thread.sleep(2_000);
         for (WebElement productName : productNameElement) {
             String nameProductOnCart = productName.getText();
-//            System.out.println(nameProductOnCart);
+//            System.out.println("dari element: "+nameProductOnCart);
+
+            for (int i = 0; i < length; i++) {
+                String name = Arrays.stream(expectedProductName).toArray()[i].toString();
+//                System.out.println("dari prefs: "+ name);
+                if (name.contains(nameProductOnCart)) {
+                    count++;
+                }
+            }
         }
+//        System.out.println("count: " + count);
+//        System.out.println("length: " + length);
+        assertEquals(length, count);
     }
 
 }

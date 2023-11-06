@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="480298cb-94c2-4314-a033-34de3f02d4d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CheckoutStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CheckoutStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/01_Homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/01_Homepage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/05_Contact.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/05_Contact.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/test-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/test-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/redsky/web/stepDefs/CartStepDefs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,18 +64,18 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;web&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/test/java/com/redsky/web/stepDefs&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/main/java/org/rizkiamin/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/test/java/com/redsky/web/stepDefs",
+    "onboarding.tips.debug.path": "D:/JAYJAY/Java/FinalProject-AutomationWebAPI/src/main/java/org/rizkiamin/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.redsky.web.stepDefs" />
@@ -87,7 +85,7 @@
       <recent name="D:\JAYJAY\Java\FinalProject-AutomationWebAPI\src\test\resources\api\" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: user checkout without logged in first">
+  <component name="RunManager" selected="Cucumber Java.Scenario: user can add all products to the cart">
     <configuration name="Feature: 07_Checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" />
@@ -107,15 +105,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: user checkout with blank payment data fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user can add all products to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/07_Checkout.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/web/features/06_Cart.feature" />
       <option name="GLUE" value="com.redsky.web.hooks com.redsky.web.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalProject-AutomationWebAPI.test" />
-      <option name="NAME_FILTER" value="^user checkout with blank payment data fields$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user checkout with blank payment data fields$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: user checkout with blank payment data fields" />
+      <option name="NAME_FILTER" value="^user can add all products to the cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can add all products to the cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user can add all products to the cart" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -189,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: user can add all products to the cart" />
         <item itemvalue="Cucumber Java.Scenario: user checkout without logged in first" />
         <item itemvalue="Cucumber Java.Scenario: user fill the checkout form data with only name and credit card fields" />
         <item itemvalue="Cucumber Java.Scenario: user fill the checkout form data with blank credit card fields" />
         <item itemvalue="Cucumber Java.Feature: 07_Checkout" />
-        <item itemvalue="Cucumber Java.Scenario: user checkout with blank payment data fields" />
       </list>
     </recent_temporary>
   </component>

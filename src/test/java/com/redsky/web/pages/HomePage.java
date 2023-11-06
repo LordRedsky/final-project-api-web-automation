@@ -61,9 +61,4 @@ public class HomePage {
         assertTrue(laptopsElement.isDisplayed());
         assertTrue(monitorsElement.isDisplayed());
     }
-
-//    public void setupCategory(String category) {
-//
-//    }
-
 }
