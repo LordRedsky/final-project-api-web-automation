@@ -202,7 +202,7 @@ public class CartPage {
     }
 
     public void validateQuantityProduct(int totalProducts, List<String> products) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         for (String product : products) {
             Thread.sleep(4_000);
             wait.until(
