@@ -55,7 +55,7 @@ public class CartStepDefs extends BaseTest {
     @Then("total cart item for these product should be {int}:")
     public void totalCartItemForTheseProductShouldBe(int totalProducts, List<String> products) throws InterruptedException {
         cartPage.validateQuantityProduct(totalProducts, products);
-        Thread.sleep(3_000);
+//        Thread.sleep(3_000);
     }
 
 

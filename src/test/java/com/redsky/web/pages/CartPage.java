@@ -114,17 +114,17 @@ public class CartPage {
         List<WebElement> priceElements = driver.findElements(priceCard);
         int totalPrices = 0;
 
-        Thread.sleep(1_500);
+//        Thread.sleep(1_500);
         for (WebElement priceElement : priceElements) {
             WebElement price = wait.until(ExpectedConditions.visibilityOf(priceElement));
             String nominalPriceString = price.getText();
             int nominalPriceInteger = Integer.parseInt(nominalPriceString);
-            Thread.sleep(1_500);
+//            Thread.sleep(1_500);
             totalPrices += nominalPriceInteger;
         }
 
         WebElement totalElements = wait.until(ExpectedConditions.visibilityOfElementLocated(totalPrice));
-        Thread.sleep(1_500);
+//        Thread.sleep(1_500);
         assertEquals(String.valueOf(totalPrices), totalElements.getText());
     }
 
@@ -151,7 +151,7 @@ public class CartPage {
     }
 
     public void removeItemQuantity(int totalClicks, List<String> products) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 
         for (String product : products) {
             Thread.sleep(3_500);
